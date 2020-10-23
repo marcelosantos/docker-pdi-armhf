@@ -18,8 +18,7 @@ ENV PDI_VERSION=7.1 PDI_BUILD=7.1.0.0-12 \
 RUN apt-get update -y
 
 # Download PDI
-#RUN wget --progress=dot:giga http://downloads.sourceforge.net/project/pentaho/Data%20Integration/${PDI_VERSION}/pdi-ce-${PDI_BUILD}.zip \
-RUN wget --progress=dot:giga http://192.168.31.46/pdi-ce-7.1.0.0-12.zip \
+RUN wget --progress=dot:giga http://downloads.sourceforge.net/project/pentaho/Data%20Integration/${PDI_VERSION}/pdi-ce-${PDI_BUILD}.zip \
     && unzip -q *.zip \
 	&& rm -f *.zip \
 	&& mkdir /jobs
